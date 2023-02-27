@@ -73,8 +73,9 @@ if (!askSpecChars && !askUpperCase && !askLowerCase){alert("You must choose at l
 
 var ranPassword = "";
 
-  for (var i = 0; i < numOfChars.length; i++) {
-    ranPassword = chosenOption[Math.floor(Math.random() * chosenOption.length)];
+  for (var i = 0; i < numOfChars; i++) {
+    var randomize = Math.floor(Math.random() * chosenOption.length);
+    ranPassword += chosenOption[randomize]
     console.log(ranPassword);
   }
 
